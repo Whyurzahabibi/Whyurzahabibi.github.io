@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Transaksi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="kebudayaan.html">Kebudayaan</a></li>
+                <li><a href="tempat_wisata.html">Tempat Wisata</a></li>
+                <li><a href="hotel.html">Hotel</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <main>
+            <h2>Lakukan Transaksi</h2>
+            <form id="transactionForm" onsubmit="processTransaction(event)">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="destination">Destinasi:</label>
+                <select id="destination" name="destination">
+                    <option value="bali">Bali</option>
+                    <option value="raja_ampat">Raja Ampat</option>
+                    <option value="borobudur">Borobudur</option>
+                    <option value="komodo">Komodo</option>
+                    <option value="bromo">Bromo</option>
+                </select><br>
+                <button type="submit">Kirim</button>
+            </form>
+            <div id="result"></div>
+        </main>        
+    </div>
+    <footer>
+        <p>&copy; 2024 Indonesian Tourism</p>
+    </footer>
+</body>
+</html>
